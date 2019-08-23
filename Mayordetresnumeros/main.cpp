@@ -1,21 +1,8 @@
  #include<iostream>
  using namespace std;
  int main (){
- float a,b,c,d;
-        cout << "Ingrese el primer numero: " << endl;
-        cin>>a;
-        cout << "Ingrese el segundo numero: " << endl;
-        cin>>b;
-        cout << "Ingrese el tercer numero: " << endl;
-        cin>>c;
-        if(a>b)
-            d=a;
-        else
-            d=b;
-        if(d>c)
-            cout << "El numero mayor es " <<d<< endl;
-        else
-            cout << "El numero mayor es "<<c<< endl;
+
+  cout << "Hello World!"<< endl;
 
 return 0;
  }
