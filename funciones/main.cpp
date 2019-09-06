@@ -74,7 +74,7 @@ char convertirMIN(char a){
 }
 int main(){
  char a;
-
+ //int a;
  cin>>a;
  //imprimirDigitos(a);
  //contardigitos(a);
