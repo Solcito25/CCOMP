@@ -30,50 +30,61 @@ for(int i=1;i<t;i++){
     arr[j]=a;
 }
 }
-void quick (int arr[], int t){
+void mayor menor (int arr[],int t, int piv =0){
     int piv=t/2;
     int i=0;
     int j=t-1;
     while(i<piv && j>piv){
         if (arr[i]> arr[piv] && arr[j]< arr[piv]){
             swaps(arr[i],arr[j]);
-            cout<<"si"<<endl;
+
             i++;
             j--;
 
         }
         else if  (arr[i]<arr[piv] && arr[j]>arr[piv]){
-             cout<<"m"<<endl;
+
             i++;
             j--;
         }
         else if(arr[i]>arr[piv] && arr[j]>arr[piv]){
-             cout<<"n"<<endl;
+
             j--;
         }
 
         else if (arr[i]<arr[piv] && arr[j]<arr[piv]){
-            cout<<"o"<<endl;
+
             i++;
 
         }
 
 
+
+
+}
+void quick (int arr[], int t){
+    mayor menor ( arr[],t);
+    mayor menor ( arr[],it/2);
+    mayor mnor (iarr[], t,  p)
+
         }
    int h=0;
    while(h<piv){
-    if (arr[i]>arr[i+1]){
-        swaps(arr[i],arr[i+1]);
+    if (arr[h]>arr[h+1]){
+        swaps(arr[h],arr[h+1]);
+        cout<<"c"<<endl;
     }
     h++;
 
     }
-   int l=piv;
-   while(l<t){
-    if(arr[l]>arr[l+1]){
-        swaps(arr[l],arr[l+1]);
+   int o=piv+1;
+   while(o<t){
+    if(arr[o]>arr[o+1]){
+
+        swaps(arr[o],arr[o+1]);
+              cout<<"d"<<endl;
     }
-     l++;
+     o++;
     }
 
 
@@ -90,8 +101,3 @@ int main()
      quick(arr,6);
      imprimir(arr,6);
 }
-
-
-
-
-
