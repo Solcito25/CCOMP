@@ -20,7 +20,7 @@ using namespace std;
 int sum (int arr[], int t,int suma=0,int i=0){
 if (i<t){
    suma+=arr[i];
-   return sum(arr,t,suma,i++);
+   return sum(arr,t,suma,i+1);
 }
  else
     return suma;
@@ -51,7 +51,7 @@ void invertir2(int arr[], int t, int i=0){
 //t-=1;
 swaps(arr[i],arr[t-i-1]);
 if (i<(t/2-1)){
-   return invertir2(arr,t,i++);
+   return invertir2(arr,t,i+1);
 }
 }
 
