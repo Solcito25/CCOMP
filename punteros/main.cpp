@@ -41,18 +41,18 @@ void invertir2(int *arr, int t, int i=0, int y=0){
 y=t-i-1;
 swap(*(arr+i),*(arr+y));
 //imprimir(arr,4);
-if (i!=y){
+if (i<t/2-1 && y>t/2-1){
    return invertir2(arr,t,i+1);
 }
 }
 int main()
 {
    //int t=4;
-   int arr[4]={4,5,6,7};
+   int arr[5]={4,5,6,7,8};
    //imprimir(arr,4);
    //cout <<sumait (arr,4)<<endl;;
    //cout <<sumare (arr,4);
    //invertir(arr,4);
-   invertir2(arr,4);
-   imprimir(arr,4);
+   invertir2(arr,5);
+   imprimir(arr,5);
 }
