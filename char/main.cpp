@@ -61,7 +61,7 @@ if(fin<=cad)
 
 int main()
 {
-    char cadena[] ="ot";
+    char cadena[] ="hola";
     char *fin=cadena+tam(cadena)-1;
 
     //cout<<tam(cadena)<<endl;
