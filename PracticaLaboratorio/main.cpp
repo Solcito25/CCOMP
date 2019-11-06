@@ -15,7 +15,7 @@ int main()
  a.SalarioAnual();
  a.Descuento();
  a.SalarioAnual();
-cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+cout<<endl<<"Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°"<<endl;
  Empleado c("Luis","Veliz",-200.6);
  c.ObtenerApellido();
  c.ObtenerNombre();
@@ -25,19 +25,19 @@ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
  c.SalarioAnual();
 
  Empleado arr[2]{a,c};
- cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+ cout<<endl<<"Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°"<<endl;
 
  Estudiante e("Julio","Velasquez","012457896321");
  e.ObtenerNombre();
  e.ObtenerApellido();
  e.ObtenerCodigo();
- cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+ cout<<endl<<"Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°"<<endl;
 
  Estudiante f("Rafael","Jimenez","012519519881");
  f.ObtenerNombre();
  f.ObtenerApellido();
  f.ObtenerCodigo();
- cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+ cout<<endl<<"Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°.Â°"<<endl;
 /*Cursos g;//("Comunicacion","12321",2);
 cout<<g.ObtenerNombre()<<endl;
 cout<<g.ObtenerCodigo()<<endl;
@@ -55,7 +55,12 @@ int m = static_cast<int>(arr[i+1].ObtenerApellidos()[0]);
 }
 if (n>m)
     swap(arr[i],arr[i+1]);
-else{
+if(n==m){
+  int f=0;
+  while(){}
+
+
+}
 
 
 
