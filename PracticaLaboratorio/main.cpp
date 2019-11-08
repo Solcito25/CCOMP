@@ -39,19 +39,24 @@ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.�
  f.ObtenerApellido();
  f.ObtenerCodigo();
  cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
-vector<Estudiante>lista;
-vector<Estudiante>lista1;
-lista.push_back(e);
-lista1.push_back(e);
-lista.push_back(f);
 
-Cursos cursillo("MATE","516",lista1,2);
-/*cout<<cursillo.ObtenerNombre()<<endl;
-cout<<cursillo.ObtenerCodigo()<<endl;
-cout<<cursillo.ObtenerCantidaddeAlumnos()<<endl;
-cout<<cursillo.ObtenerDireccion()<<endl;
-*/
 
+Estudiante arreglo[2]={e,f};
+Estudiante arreglo2[1]={e};
+Cursos g("Matematica","516",arreglo,2);
+cout<<"Nombre del Curso:"<<g.ObtenerNombre()<<endl;
+cout<<"Codigo del Curso:"<<g.ObtenerCodigo()<<endl;
+cout<<"Cantidad de Alumnos:"<<g.ObtenerCantidaddeAlumnos()<<endl;
+cout<<"Direccion de lista:"<<g.ObtenerDireccion()<<endl;
+g.ModificarNombre("Comunicacion");
+g.ModificarCodigo("135");
+g.ModificarDireccion(arreglo2);
+g.IncrementarUnEstudiante();
+cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+cout<<"Nombre del Curso:"<<g.ObtenerNombre()<<endl;
+cout<<"Codigo del Curso:"<<g.ObtenerCodigo()<<endl;
+cout<<"Cantidad de Alumnos:"<<g.ObtenerCantidaddeAlumnos()<<endl;
+cout<<"Direccion de lista:"<<g.ObtenerDireccion()<<endl;
 
 }
 
