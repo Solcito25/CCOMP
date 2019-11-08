@@ -16,7 +16,7 @@ int main()
  a.SalarioAnual();
  a.Descuento();
  a.SalarioAnual();
-cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
  Empleado c("Luis","Veliz",-200.6);
  c.ObtenerApellido();
  c.ObtenerNombre();
@@ -26,19 +26,19 @@ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.�
  c.SalarioAnual();
 
  Empleado arr[2]={a,c};
- cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 
  Estudiante e("Julio","Velasquez","012457896321");
  e.ObtenerNombre();
  e.ObtenerApellido();
  e.ObtenerCodigo();
- cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 
  Estudiante f("Rafael","Jimenez","012519519881");
  f.ObtenerNombre();
  f.ObtenerApellido();
  f.ObtenerCodigo();
- cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 
 
 Estudiante arreglo[2]={e,f};
@@ -52,23 +52,23 @@ g.ModificarNombre("Comunicacion");
 g.ModificarCodigo("135");
 g.ModificarDireccion(arreglo2);
 g.IncrementarUnEstudiante();
-cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 cout<<"Nombre del Curso:"<<g.ObtenerNombre()<<endl;
 cout<<"Codigo del Curso:"<<g.ObtenerCodigo()<<endl;
 cout<<"Cantidad de Alumnos:"<<g.ObtenerCantidaddeAlumnos()<<endl;
 cout<<"Direccion de lista:"<<g.ObtenerDireccion()<<endl;
 
-
+cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 Cursos h("Matematica I","517",arreglo,2);
 cout<<"Nombre del Curso:"<<h.ObtenerNombre()<<endl;
 cout<<"Codigo del Curso:"<<h.ObtenerCodigo()<<endl;
 cout<<"Cantidad de Alumnos:"<<h.ObtenerCantidaddeAlumnos()<<endl;
 cout<<"Direccion de lista:"<<h.ObtenerDireccion()<<endl;
-g.ModificarNombre("Comunicacion II");
-g.ModificarCodigo("136");
-g.ModificarDireccion(arreglo2);
-g.IncrementarUnEstudiante();
-cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+h.ModificarNombre("Comunicacion II");
+h.ModificarCodigo("136");
+h.ModificarDireccion(arreglo2);
+h.IncrementarUnEstudiante();
+cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 cout<<"Nombre del Curso:"<<h.ObtenerNombre()<<endl;
 cout<<"Codigo del Curso:"<<h.ObtenerCodigo()<<endl;
 cout<<"Cantidad de Alumnos:"<<h.ObtenerCantidaddeAlumnos()<<endl;
