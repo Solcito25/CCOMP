@@ -58,6 +58,21 @@ cout<<"Codigo del Curso:"<<g.ObtenerCodigo()<<endl;
 cout<<"Cantidad de Alumnos:"<<g.ObtenerCantidaddeAlumnos()<<endl;
 cout<<"Direccion de lista:"<<g.ObtenerDireccion()<<endl;
 
+
+Cursos h("Matematica I","517",arreglo,2);
+cout<<"Nombre del Curso:"<<h.ObtenerNombre()<<endl;
+cout<<"Codigo del Curso:"<<h.ObtenerCodigo()<<endl;
+cout<<"Cantidad de Alumnos:"<<h.ObtenerCantidaddeAlumnos()<<endl;
+cout<<"Direccion de lista:"<<h.ObtenerDireccion()<<endl;
+g.ModificarNombre("Comunicacion II");
+g.ModificarCodigo("136");
+g.ModificarDireccion(arreglo2);
+g.IncrementarUnEstudiante();
+cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
+cout<<"Nombre del Curso:"<<h.ObtenerNombre()<<endl;
+cout<<"Codigo del Curso:"<<h.ObtenerCodigo()<<endl;
+cout<<"Cantidad de Alumnos:"<<h.ObtenerCantidaddeAlumnos()<<endl;
+cout<<"Direccion de lista:"<<h.ObtenerDireccion()<<endl;
 }
 
 void OrdenarNombres(Empleado arr[]){
