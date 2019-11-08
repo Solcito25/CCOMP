@@ -4,10 +4,7 @@
 using namespace std;
 Cursos::Cursos()
 {
-   nombre="";
-   codigo="";
-   cantidadDeAlumnos=0;
-   alumnos[0];
+
 }
 Cursos::Cursos(Cursos &o){
   nombre=o.nombre;
@@ -15,25 +12,23 @@ Cursos::Cursos(Cursos &o){
   cantidadDeAlumnos=o.cantidadDeAlumnos;
   alumnos=o.alumnos;
 }
-Cursos::Cursos(string nombre,string codigo,int cantidadDeAlumnos){
+Cursos::Cursos(string nombre,string codigo,Estudiante *alumnos,int cantidadDeAlumnos){
 this->nombre=nombre;
 this->codigo=codigo;
-*alumnos=alumnos[cantidadDeAlumnos];
+this ->alumnos=alumnos;
 this->cantidadDeAlumnos =cantidadDeAlumnos;
 }
 Cursos::~Cursos()
 {
     //dtor
 }
-string Cursos :: ObtenerNombre(){
-    return nombre;
-}
-string Cursos :: ObtenerCodigo(){
-    return codigo;
-}
-int Cursos:: ObtenerCantidaddeAlumnos(){
-    return cantidadDeAlumnos;
-    }
+string Cursos :: ObtenerNombre(){return nombre;}
+
+string Cursos :: ObtenerCodigo(){return codigo;}
+
+int Cursos:: ObtenerCantidaddeAlumnos(){return cantidadDeAlumnos;}
+
+Estudiante * Cursos :: ObtenerDireccion(){return alumnos;}
 
 
 void Cursos :: ModificarNombre(string nombre){
@@ -42,8 +37,12 @@ void Cursos :: ModificarNombre(string nombre){
 void Cursos :: ModificarCodigo(string codigo){
     this-> codigo=codigo;
 }
-void Cursos :: ModificarCantidaddeAlumnos(){
+void Cursos :: ModificarCantidaddeAlumnos(int cantidadDeAlumnos){
     this -> cantidadDeAlumnos=cantidadDeAlumnos;
+}
+
+void Cursos :: ModificarDireccion(Estudiante* alumnos){
+    this ->alumnos=alumnos;
 }
 void Cursos ::IncrementarUnEstudiante(){
  cantidadDeAlumnos+=1;

@@ -10,15 +10,17 @@ class Cursos
     public:
         Cursos();
         Cursos(Cursos &o);
-        Cursos(string nombre,string codigo,int cantidadDeAlumnos);
+        Cursos(string nombre,string codigo,Estudiante *alumnos,int cantidadDeAlumnos);
         string ObtenerNombre();
         string ObtenerCodigo();
+        Estudiante* ObtenerDireccion();
         int ObtenerCantidaddeAlumnos();
 
         void ModificarNombre(string nombre);
         void ModificarCodigo(string codigo);
-        void ModificarCantidaddeAlumnos();
+        void ModificarCantidaddeAlumnos(int cantidadDeAlumnos);
         void IncrementarUnEstudiante();
+        void ModificarDireccion(Estudiante *alumno);
         virtual ~Cursos();
 
     protected:

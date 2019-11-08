@@ -3,6 +3,7 @@
 #include "Estudiante.h"
 #include "Cursos.h"
 #include<string>
+#include<vector>
 using namespace std;
 
 int main()
@@ -24,7 +25,7 @@ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.�
  c.Descuento();
  c.SalarioAnual();
 
- Empleado arr[2]{a,c};
+ Empleado arr[2]={a,c};
  cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
 
  Estudiante e("Julio","Velasquez","012457896321");
@@ -38,34 +39,41 @@ cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.�
  f.ObtenerApellido();
  f.ObtenerCodigo();
  cout<<endl<<"°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°.°"<<endl;
-/*Cursos g;//("Comunicacion","12321",2);
-cout<<g.ObtenerNombre()<<endl;
-cout<<g.ObtenerCodigo()<<endl;
-cout<<g.ObtenerCantidaddeAlumnos()<<endl;
+vector<Estudiante>lista;
+vector<Estudiante>lista1;
+lista.push_back(e);
+lista1.push_back(e);
+lista.push_back(f);
 
- Empleado arr[2]={a,c};
+Cursos cursillo("MATE","516",lista1,2);
+/*cout<<cursillo.ObtenerNombre()<<endl;
+cout<<cursillo.ObtenerCodigo()<<endl;
+cout<<cursillo.ObtenerCantidaddeAlumnos()<<endl;
+cout<<cursillo.ObtenerDireccion()<<endl;
 */
+
 
 }
 
-void OrdenarNombres(Empleado *arr){
+void OrdenarNombres(Empleado arr[]){
 for(int i=0;i<2;i++){
 int n = static_cast<int>(arr[i].ObtenerApellidos()[0]);
 int m = static_cast<int>(arr[i+1].ObtenerApellidos()[0]);
-}
 if (n>m)
     swap(arr[i],arr[i+1]);
 if(n==m){
-  int f=0;
-  while(){}
-
-
+  for(int f=0;f<(arr[i].ObtenerApellidos().size())&& (arr[i+1].ObtenerApellidos().size());f++){
+    int o = static_cast<int>(arr[i].ObtenerApellidos()[f]);
+    int p = static_cast<int>(arr[i+1].ObtenerApellidos()[f]);
+    if (o>p){
+        swap(arr[i],arr[i+1]);
+        break;
+    }
+  }
+}
+}
 }
 
-
-
-}
-}
 
 
 
