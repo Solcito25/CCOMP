@@ -11,7 +11,7 @@ class ArraysPolygons
         ArraysPolygons(ArraysPolygons &o);
         void insertarfinal(Polygon d);
         void insertar(Polygon d,int pos);
-        void redimensionar(int tam);
+        void redimensionpublic(int tam);
         void eliminar();
 
     protected:
@@ -21,6 +21,7 @@ class ArraysPolygons
         int sizes;
         int pos;
         int tam;
+        void redimensionar(int tam);
 };
 
 #endif // ARRAYPOLYGONS_H
