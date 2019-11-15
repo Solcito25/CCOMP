@@ -60,6 +60,9 @@ sizes--;
     arr=tmp;
 }
 
+void ArraysPolygons:: redimensionpublic(int tam){
+    redimensionar(tam);
+}
 void ArraysPolygons:: redimensionar(int tam){
    if(sizes<tam){
    sizes=tam;
