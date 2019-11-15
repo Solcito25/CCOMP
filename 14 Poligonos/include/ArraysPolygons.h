@@ -1,14 +1,14 @@
-#ifndef ARRAYPOLYGONS_H
-#define ARRAYPOLYGONS_H
+#ifndef ARRAYSPOLYGONS_H
+#define ARRAYSPOLYGONS_H
 #include "Polygon.h"
 
-class ArrayPolygons
+class ArraysPolygons
 {
     public:
-        ArrayPolygons();
-        ArrayPolygons(Polygon a[],int s);
-        ~ArrayPolygons();
-        ArrayPolygons(ArrayPolygons &o);
+        ArraysPolygons();
+        ArraysPolygons(Polygon a[],int s);
+        ~ArraysPolygons();
+        ArraysPolygons(ArraysPolygons &o);
         void insertarfinal(Polygon d);
         void insertar(Polygon d,int pos);
         void redimensionar(int tam);

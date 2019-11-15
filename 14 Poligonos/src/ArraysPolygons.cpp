@@ -1,16 +1,16 @@
-#include "ArrayPolygons.h"
-
-ArrayPolygons::ArrayPolygons()
+#include "ArraysPolygons.h"
+#include "Polygon.h"
+ArraysPolygons::ArraysPolygons()
 {
     this -> sizes=0,
     this -> arr=new Polygon[sizes];
 }
 
-ArrayPolygons::~ArrayPolygons()
+ArraysPolygons::~ArraysPolygons()
 {
     delete[]arr;
 }
- ArrayPolygons::ArrayPolygons(Polygon a[],int s){
+ ArraysPolygons::ArraysPolygons(Polygon a[],int s){
     this -> sizes=s,
     this -> arr=new Polygon[sizes];
     for(int i=0;i<sizes;i++){
@@ -18,13 +18,13 @@ ArrayPolygons::~ArrayPolygons()
     }
 
  }
-ArrayPolygons::ArrayPolygons(ArrayPolygons &o){
+ArraysPolygons::ArraysPolygons(ArraysPolygons &o){
     arr=new Polygon[o.sizes];
     this ->sizes=o.sizes;
 
 }
 
-void ArrayPolygons::insertarfinal(Polygon d){
+void ArraysPolygons::insertarfinal(Polygon d){
     sizes++;
     Polygon *tmp=new Polygon[sizes];
     for(int i=0;i<sizes-1;i++){
@@ -34,7 +34,7 @@ void ArrayPolygons::insertarfinal(Polygon d){
     delete []arr;
     arr=tmp;
 }
-void ArrayPolygons::insertar(Polygon d,int pos){
+void ArraysPolygons::insertar(Polygon d,int pos){
 sizes++;
     Polygon *tmp=new Polygon[sizes];
     for(int i=0;i<pos;i++){
@@ -49,7 +49,7 @@ sizes++;
     delete []arr;
     arr=tmp;
 }
-void ArrayPolygons::eliminar(){
+void ArraysPolygons::eliminar(){
 sizes--;
     Polygon *tmp=new Polygon[sizes];
     for(int i=0;i<sizes;i++){
@@ -60,7 +60,7 @@ sizes--;
     arr=tmp;
 }
 
-void ArrayPolygons:: redimensionar(int tam){
+void ArraysPolygons:: redimensionar(int tam){
    if(sizes<tam){
    sizes=tam;
    Polygon *tmp=new Polygon[sizes];
